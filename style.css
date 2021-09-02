@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #09080f;
+  color: #fff;
+  font-size: 90px;
+  font-family: fira mono,monospace;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+a {
+  color:#0ebeffeb;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+div{
+  animation: glitch 1s linear infinite;
+  margin-bottom: 410px;
+
+}
+.pozn {
+  font-size: 15px;
+  align:center;
+  display:flex;
+}
+.btn {
+  position: relative;
+  text-align: center;
+  margin: -60px;
+  font-size: 5REM;
+  ANIMATION: none;
+  color: white !important;
+}
+input[type="button"] {
+  color: white;
+  background-color: #09080f;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+  user-select: none;
+}
+input[type="button"]:hover {
+  color: white;
+  background-color: #09080ffa;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+  user-select: none;
+  border-radius:7px;
+
+}
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+.imgg {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 600px;
+    width: 380px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+.imgg2 {
+  position: relative;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 128px;
+    width: 128px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+.he {
+  font-size: 24px;
+  font-family: 'Fira Mono';
+  letter-spacing: -2px;
+  margin-top: 60px;
+}
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .imgg {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 600px;
+    width: 380px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+.imgg2 {
+  position: relative;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 128px;
+    width: 128px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+.he {
+  font-size: 24px;
+  font-family: 'Fira Mono';
+  letter-spacing: -2px;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+.imgg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 368px;
+    width: 258px;
+    text-indent: -999em;
+    text-decoration: none;
+}
+.imgg2 {
+  position: relative;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 128px;
+    width: 128px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+div {
+    animation: glitch 1s linear infinite;
+    margin-bottom: 410px;
+    font-size: 26px;
+}
+.he {
+    font-size: 11px;
+    font-family: 'Fira Mono';
+    letter-spacing: -1px;
+}
+.btn {
+    position: relative;
+    text-align: center;
+    font-size: 5REM;
+    ANIMATION: none;
+    color: white !important;
+    margin-top: -228px;
+    transform: scale(0.6);
+    left: -50px;
+}
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #09080f;
+    color: #fff;
+    font-size: 90px;
+    font-family: fira mono,monospace;
+    letter-spacing: 1px;
+    user-select: none;  
+}
+.imgg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 287px;
+    width: 191px;
+    text-indent: -999em;
+    text-decoration: none;
+}
+.imgg2 {
+  position: relative;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 128px;
+    width: 128px;
+  
+    text-indent: -999em;
+    text-decoration: none;
+}
+div {
+    animation: glitch 1s linear infinite;
+    margin-bottom: 410px;
+    font-size: 25px;
+}
+.he {
+    font-size: 9px;
+    font-family: 'Fira Mono';
+    letter-spacing: -1px;
+}
+.btn {
+    position: relative;
+    text-align: center;
+    font-size: 5REM;
+    ANIMATION: none;
+    color: white !important;
+    margin-top: -240px;
+    transform: scale(0.5);
+    left: -50px;
+}
+
+
+
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #09080f;
+    color: #fff;
+    font-size: 74px;
+    font-family: fira mono,monospace;
+    letter-spacing: 1px;
+    user-select: none;
+    transform: scale(1);
+}
+}
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #09080f;
+  color: #fff;
+  font-size: 90px;
+  font-family: fira mono,monospace;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+div {
+    animation: glitch 1s linear infinite;
+    margin-bottom: 410px;
+    font-size: 87px;
+}
+.btn {
+    position: relative;
+    text-align: center;
+    font-size: 5REM;
+    ANIMATION: none;
+    color: white !important;
+    margin-top: -228px;
+}
+input[type="button"] {
+  color: white;
+  background-color: #09080f;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+  user-select: none;
+}
+input[type="button"]:hover {
+  color: white;
+  background-color: #09080ffa;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+  user-select: none;
+  border-radius:7px;
+
+}
+.imgg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 648px;
+    width: 386px;
+    text-indent: -999em;
+    text-decoration: none;
+}
+.he {
+    font-size: 21px;
+    font-family: 'Fira Mono';
+    letter-spacing: -1px;
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #09080f;
+  color: #fff;
+  font-size: 90px;
+  font-family: fira mono,monospace;
+  letter-spacing: 1px;
+  user-select: none;
+}
+.he {
+    font-size: 21px;
+    font-family: 'Fira Mono';
+    letter-spacing: -1px;
+}
+
+div{
+  animation: glitch 1s linear infinite;
+  margin-bottom: 410px;
+
+}
+.btn {
+  position: relative;
+  text-align: center;
+  margin: -60px;
+  font-size: 5REM;
+  ANIMATION: none;
+  color: white !important;
+}
+input[type="button"] {
+  color: white;
+  background-color: #09080f;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+ 
+}
+input[type="button"]:hover {
+  color: white;
+  background-color: #09080ffa;
+  outline-color: #09080f;
+  outline: none;
+  border: #09080f;
+  pointer-events: auto;
+  font-size: 54px;
+  font-family: fira mono,monospace;
+  
+  border-radius:7px;
+
+}
+ 
+
+.imgg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 648px;
+    width: 386px;
+    text-indent: -999em;
+    text-decoration: none;
+}
+} 
+
+  
+  
